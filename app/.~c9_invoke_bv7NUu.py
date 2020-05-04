@@ -8,7 +8,7 @@ import os
 from app import app
 from flask import render_template, request, redirect, url_for, flash, session, abort ,  jsonify 
 from werkzeug.utils import secure_filename
-from app.forms import UploadForm
+from app.forms import ProfileForm
 
 
 
@@ -80,22 +80,23 @@ def page_not_found(error):
     return render_template('404.html'), 404
 
 
+#upload route
 @app.route('/api/upload', methods=['POST'])
 def upload():
-    form=UploadForm()
+    form= ProfileForm()
     
-    if request.method == "POST" and form.validate_on_submit():
-        Description = request.form['description']
-        
+    if(request.method=="POST" and form.validate_on_submit()):
         file = request.files['photo']
+        textarea = request.form['textarea']
+        
         filename = secure_filename(file.filename)
         file.save(os.path.join(app.config['UPLOAD_FOLDER'], file.filename))
         
-        messages=[{'message': 'File Upload Successful', 'filename': filename, 'Description': Description }]
+        messages=[{'message': 'File Upload Successful', 'filename': filename, 'description': textarea}]
         return jsonify(messages=messages)
         
     errors=[{'error': form_errors(form)}]
-    return  jsonify(errors = errors)
+    return  jsonify(errors=errors)
     
     
 

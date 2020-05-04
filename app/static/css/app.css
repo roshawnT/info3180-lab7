@@ -1,3 +1,105 @@
 body {
     padding-top: 5rem;
 }
+.good{
+background-color:rgb(212, 237, 218);
+border-color:rgb(195, 230, 203);
+border-bottom-left-radius:4px;
+border-bottom-right-radius:4px;
+border-bottom-style:solid;
+border-bottom-width:1px;
+border-image-outset:0px;
+border-image-repeat:stretch;
+border-image-slice:100%;
+border-image-source:none;
+border-image-width:1;
+border-left-style:solid;
+border-left-width:1px;
+border-right-style:solid;
+border-right-width:1px;
+border-top-left-radius:4px;
+border-top-right-radius:4px;
+border-top-style:solid;
+border-top-width:1px;
+box-sizing:border-box;
+color:rgb(21, 87, 36);
+display:block;
+font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+font-size:16px;
+font-weight:400;
+height:50px;
+line-height:24px;
+padding:12px 20px;
+position:relative;
+text-align:left;
+
+margin-bottom:0px;
+margin-left: 0vw;
+
+}
+
+.bad{
+background-color:rgb(248, 215, 218);
+border-bottom-left-radius:4px;
+border-bottom-right-radius:4px;
+border-bottom-style:solid;
+border-bottom-width:1px;
+border-image-outset:0px;
+border-image-repeat:stretch;
+border-image-slice:100%;
+border-image-source:none;
+border-image-width:1;
+border-color:rgb(245, 198, 203);
+border-left-style:solid;
+border-left-width:1px;
+border-right-style:solid;
+border-right-width:1px;
+border-top-left-radius:4px;
+border-top-right-radius:4px;
+border-top-style:solid;
+border-top-width:1px;
+box-sizing:border-box;
+color:rgb(114, 28, 36);
+display:block;
+font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+font-size:16px;
+font-weight:400;
+height:50px;
+line-height:24px;
+margin-bottom:0px;
+padding:12px 20px;
+position:relative;
+text-align:left;
+
+
+}
+
+
+.nodot {
+    list-style-type: none;
+}
+
+.container{
+    width:70vw;
+    height: 436px;
+    margin-left: 15vw;
+    margin-bottom: 100px;
+}
+
+ul{
+    padding-left: 0;
+}
+
+.btn3
+{
+    background-color : rgb(0, 123, 255);
+    padding: 6px 12px;
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size:16px;
+    border-radius: 4px;
+    color: white;
+    border-color: rgb(0, 123, 255);
+}
+.btn3:hover{
+    background-color : rgb(0, 98, 204);;
+}
